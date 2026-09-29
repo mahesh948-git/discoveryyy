@@ -1,0 +1,14 @@
+hostname,host_ip,interface,status,protocol,description
+HYBDCCSXGPR001,172.16.3.49,Gi0/0/9,up,up,TO-HYBDCCSXSWT001-Gi09_Direct_SW
+HYBDCCSXGPR001,172.16.3.49,BD3301,admin down,down,CCS-Central Crime Station_SERVICES_Direct_SW
+HYBDCCSXGPR001,172.16.3.49,BD3302,up,up,CCS-Central Crime Station_SERVICES_200Mb_GIBB_Direct_SW
+HYBDCCSXGPR001,172.16.3.49,Po30,up,up,Connected-to-SWITCH_Direct_SW
+HYDSRNIDGPR001,172.16.3.58,Gi0/0/20,up,up,TO-SWITCH_Direct_SW
+HYDSRNIDGPR001,172.16.3.58,BD3301,up,up,GI_BB_Services_Sreenidhi_Connectivity_100Mb_Direct_SW
+HYDSRNIDGPR001,172.16.3.58,Po30,up,up,Connected-to-SWITCH_Direct_SW
+HYDTGSECMAR001,172.16.80.225,Te0/8/6,up,up,1Gbps_ILL_TS_Secretariat_Direct
+HYBDGAPSMAG001,172.16.80.227,Gi0/0/20,up,up,Direct_SW TO SWITCH
+HYBDGAPSMAG001,172.16.80.227,BD3301,up,up,GI_BB_Services_100Mbps_Connectivity_Direct_SW
+HYBDGAPSMAG001,172.16.80.227,Po30,up,up,Direct_SW
+GACHCPCOGPR001,172.16.6.51,Gi0/0/7,up,up,Cyberabad_Commissionerate_1G_ILL_Direct
+GACHCPCOGPR001,172.16.6.51,BD3000,up,up,1Gbps_ILL_Cyberbad_Commissionerate_Direct

@@ -1,0 +1,23 @@
+Sl.No	GI Name	Department	Sub Department	PO Number	Monitoring IP	Monitoring Interface
+1	Bharti Airtel Ltd	Bharti Airtel Ltd	Bharti Airtel Ltd	BAL-TNG-NLD--Telangana/PUR/10001288	10.253.205.163	Gi0/3/10
+3	Bharti Airtel Ltd	Bharti Airtel Ltd	Bharti Airtel Ltd	BAL-TNG-NLD--Telangana/PUR/10001288	10.253.192.131	Gi0/3/12
+103	Cyber Crime Police Station	Cyber Crime	Cyber Crime Police Station	PO.NO:HCP/EB/EB4/0139/2025	172.16.3.49	Gi0/0/9
+104	Cyber Crime Police Station	Cyber Crime	Cyber Crime Police Station	SS-1/508/Stores/Cyb/2024	172.16.3.49	BD3302
+105	Cyberabad Police Commissionerate	Commissionerate	Cyberabad Police Commissionerate	SS-1/508/Stores/Cyb/2024	172.16.6.51	Gi0/0/7
+106	DCP Office	DCP Office	DCP Office	PO.NO:SS-1/86/4/Stores/Cyb/2025	172.16.3.48	BD3000
+109	DCP Office	DCP Office	DCP Office	PO.NO:SS-1/86/4/Stores/Cyb/2025	172.16.3.47	Gi0/0/20
+112	Distrcit Collectorate	Distrcit Collectorate	Distrcit Collectorate	Only email confirmation.	172.16.104.4	Gi0/3/2
+113	Distrcit Collectorate	Distrcit Collectorate	Distrcit Collectorate	Only email confirmation.	Not  available	Not  available
+2060	Pioneer e Labs Ltd	Pioneer	Pioneer	PEL/Tfiber/002/2024-25	172.16.3.54	0/5/0/42
+2492	D.B.R.Amdedkar Secretariat	D.B.R.Amdedkar Secretariat	Hyderabad-Customer	Not available	172.16.80.225	Te0/8/6
+2494	Stree Nidhi Credit Co-Operative Society	Stree Nidhi Credit Co-Operative Society	Hyderabad-Customer	200/SN/IT/TCS/2025-26	172.16.22.130 	Gi0/0/20 
+5846	Telangana soft net 	Telangana soft net 	Hyderabad-Customer	Not available	172.16.6.64	Not  available
+5847	T-Fiber Office	T-Fiber Office	T-Fiber Office	Not available	172.16.0.184	Not  available
+5848	T-NOC	T-NOC	T-Noc	Not available	Not  available	Not  available
+5850	State Data Center	State Data Center	Hyderabad-Customer	Not available	172.16.80.226	Te0/8/1
+5852	TSWREIS	TSWREIS	Social Welfare	Not available	Not  available	Not  available
+5853	BRK Bhavan	BRK Bhavan	Hyderabad-Customer	Not available	172.16.3.54	Gi0/7/2
+7361	TGSPDCL	TGSPDCL	TGSPDCL	Lr.No. CE(IT)/TGSPDCL/F.T Fiber ILL/D.No.525/25 Date :24-10-2025	172.16.3.54	Gi0/7/8
+7992	Cyberabad Police Commissionerate-1	Police Station-Hyd	Internal Network	Not available	172.16.6.51	Gi0/0/20
+7993	Cyberabad Police Commissionerate-2	Police Station-Hyd	Internal Network	Not available	Not  available	Not  available
+8048	Hyderabad-Customer	Mines and Geology	Hyderabad-Customer	DMG-A1/1/2026-DMG	172.16.3.54	Gi0/4/6

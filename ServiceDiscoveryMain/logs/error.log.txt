@@ -1,0 +1,218 @@
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 321, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 328, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 321, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 328, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 321, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 328, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 74, in send_mail
+    server = smtplib.SMTP(smtp_server, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 321, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 99, in send_mail
+    server.sendmail(sender_email, all_recipients, message.as_string())
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 908, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (432, b'4.3.2 Concurrent connections limit exceeded. Visit https://aka.ms/concurrent_sending for more information. [Hostname=PN2PR01MB10202.INDPRD01.PROD.OUTLOOK.COM]')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 328, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 99, in send_mail
+    server.sendmail(sender_email, all_recipients, message.as_string())
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 908, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (432, b'4.3.2 Concurrent connections limit exceeded. Visit https://aka.ms/concurrent_sending for more information. [Hostname=PN2PR01MB10202.INDPRD01.PROD.OUTLOOK.COM]')
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 321, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 99, in send_mail
+    server.sendmail(sender_email, all_recipients, message.as_string())
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 908, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (432, b'4.3.2 STOREDRV; mailbox database is offline; STOREDRV.Submission.Exception:MailboxOfflineException.MapiExceptionMdbNotInitialized.MapiExceptionMdbNotInitialized; Failed to process message due to a transient exception with message [BeginDiagnosticData]Cannot submit message. 1.84300:01000000, 1.84300:0B000000, 1.84300:0A000000, 1.84300:0A000000, 1.84300:0E000000, 1.84300:32000000, 1.73948:00000000, 5.71140:67000000446F526F70730000, 1.108572:76040000, 1.115612:06050000, 0.80796:95000000, 255.111500:55736572, 5.95292:67000000446F526F7073006E, 8.111356:9552F9FE86593ECC1F1F572B2F8F6BAC0BAFA94C, 0.38698:6661696C, 1.41134:86000000, 1.98628:00000000, 1.41134:86000000, 1.98628:00000000, 1.41134:86000000, 1.98628:00000000, 1.41134:46000000, 1.98628:00000000, 0.37692:00000000, 0.33596:00000000, 7.36354:010000000000010900000000, 1.46439:0A000000, 1.115228:00000000, 0.104668:01000000, 1.44903:25000000, 1.115228:00000000, 0.51358:D5894F04, 7.40748:010000000000010B78636570, 7.57132:000000000000000021000000, 4.62354:80090000, 5.35702:000000004573656E744C6F6757726974654661696C457863657074696F6E001018000000, 4.62354:02FEFFFF, 4.45686:76040000, 1.47326:E0B70000, 0.47072:01000000, 2.63456:9ADA0000, 1.38714:03000000, 8.41344:018BE3F9836FC644845246D5C6F1E95E37373932, 1.35200:40C40500, 8.41344:018BE3F9836FC644845246D5C6F1E95E03000000, 1.35200:40C40500, 4.56518:76040000, 4.64456:76040000, 0.50784:03000000, 1.41134:86000000, 0.61042:B9040000, 1.55954:0B000000, 0.40818:07000000, 1.33010:0B000000, 2.54258:00000000, 0.59634:00000000, 1.56562:00000000, 1.33010:0B000000, 2.54258:00000000, 0.59634:00000000, 1.56562:00000000, 1.55954:0A000000, 1.33010:0A000000, 2.54258:00000000, 0.40002:07000000, 1.56562:00000000, 1.33010:0A000000, 2.54258:00000000, 0.40002:00000000, 1.56562:00000000, 1.55954:0A000000, 1.33010:0A000000, 2.54258:00000000, 0.40002:00000000, 1.56562:00000000, 1.33010:0A000000, 2.54258:00000000, 0.40002:07000000, 1.56562:00000000, 1.64146:0E000000, 1.33010:0E000000, 2.54258:00000000, 1.33010:0E000000, 2.54258:00000000, 1.64146:32000000, 255.123500:00000000, 4.89532:76040000, 1.52466:02000000, 1.52466:02000000, 1.42738:05000000, 0.37698:08000000, 1.42738:05000000, 0.37698:00000000, 1.52466:01000000, 0.60402:00000000, 1.52466:01000000[EndDiagnosticData] [Hostname=PN3PR01MB10197.INDPRD01.PROD.OUTLOOK.COM]')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 328, in <module>
+    mail.send_mail(Emails, [], subject, body, None)
+  File "E:\PycharmProjects\ServiceDiscoveryMain\mail.py", line 99, in send_mail
+    server.sendmail(sender_email, all_recipients, message.as_string())
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\smtplib.py", line 908, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (432, b'4.3.2 STOREDRV; mailbox database is offline; STOREDRV.Submission.Exception:MailboxOfflineException.MapiExceptionMdbNotInitialized.MapiExceptionMdbNotInitialized.MapiExceptionMdbNotInitialized; Failed to process message due to a transient exception with message [BeginDiagnosticData]The process failed to get the correct properties. 1.84300:02000000, 1.84300:9F000000, 1.84300:01000000, 1.84300:08000000, 1.73948:00000000, 5.71140:67000000446F526F70730000, 1.108572:76040000, 1.115612:C6030000, 0.80796:66000000, 255.111500:6F6E6E65, 5.95292:67000000446F526F70730000, 8.111356:9552F9FE86593ECC1F1F572B2F8F6BAC00000000, 0.38698:B87CC736, 1.41134:86000000, 1.98628:00000000, 7.36354:010000000000010B150FAC81, 1.46439:0A000000, 1.115228:00000000, 1.83812:00000000, 8.124772:9552F9FE86593ECC1F1F572B2F8F6BAC8F478E3C, 0.67428:46000000, 0.104668:61637469, 1.41134:86000000, 1.98628:00000000, 7.36354:010000000000010B65466169, 1.46439:0A000000, 1.115228:00000000, 0.104668:02FEFFFF, 0.50486:76040000, 7.61228:010000000000010B76040000, 4.60306:80090000, 5.35702:000000004573656E744C6F6757726974654661696C457863657074696F6E0074726F6C44, 4.60306:02FEFFFF, 4.45686:76040000, 4.56518:76040000, 4.64456:76040000, 0.61042:D4606C01, 1.64146:02000000, 1.33010:02000000, 2.54258:00000000, 0.58802:00000000, 1.33010:02000000, 2.54258:00000000, 0.58802:00000000, 1.64146:9F000000, 255.123500:2E434F4D, 4.89532:76040000, 1.52466:01000000, 0.60402:2C000000, 1.52466:01000000[EndDiagnosticData] [Hostname=PN3PR01MB10197.INDPRD01.PROD.OUTLOOK.COM]')
+Traceback (most recent call last):
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 318, in <module>
+    status, msg = push_data()
+                  ^^^^^^^^^^^
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 292, in push_data
+    new_df = df.groupby(['Package', 'OLT Hostname', 'ONT Serial Number'], as_index=False).agg(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\groupby\generic.py", line 1466, in aggregate
+    return self._python_agg_general(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\groupby\generic.py", line 1532, in _python_agg_general
+    result = self._grouper.agg_series(ser, f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\groupby\ops.py", line 864, in agg_series
+    result = self._aggregate_series_pure_python(obj, func)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\groupby\ops.py", line 885, in _aggregate_series_pure_python
+    res = func(group)
+          ^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\groupby\generic.py", line 1515, in <lambda>
+    f = lambda x: func(x, *args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PycharmProjects\ServiceDiscoveryMain\main.py", line 285, in combine_values
+    unique_vals = non_null.unique()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\series.py", line 2416, in unique
+    return super().unique()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\base.py", line 1029, in unique
+    result = algorithms.unique1d(values)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\algorithms.py", line 401, in unique
+    return unique_with_mask(values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmadmin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\algorithms.py", line 440, in unique_with_mask
+    uniques = table.unique(values)
+              ^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C

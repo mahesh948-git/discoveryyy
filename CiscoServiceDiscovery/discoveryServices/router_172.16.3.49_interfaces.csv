@@ -1,0 +1,4 @@
+router,bdi_interface,description,vrf,ip,mask,bd,bridge_ports,bridge_mac_entries,port_channel,po_service_instances,vsi_details,switch_ip_from_arp,switch_info
+172.16.3.49,BDI3301,***CCS-Central Crime Station_SERVICES_Direct_SW***,GI_BB_SERVICES,10.12.183.1,255.255.255.0,3301,"['Port-channel30', 'Po0/0/30.Efp3301']","[{'bd': '3301', 'mac': 'a488.73a3.6759', 'type': 'DYNAMIC', 'port': 'Po0/0/30.Efp3301'}]",Po0/0/30.,{},{},,{}
+172.16.3.49,GigabitEthernet0,,Mgmt-intf,,,,,,Po30(RU),{},{},,{}
+172.16.3.49,Loopback99,*** Loopback interface for management ***,TFIBER-IP-MGMT,172.16.3.49,255.255.255.255,,,,Po30(RU),{},{},,{}
