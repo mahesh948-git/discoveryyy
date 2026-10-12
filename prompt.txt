@@ -1,0 +1,380 @@
+Here in this sheet focus on 2 sheets Sheet first is main data file Total Connections Detailed Data
+and other one sheet second is Summary 16-Sep-2026
+
+summary 16-sep-2026 is the requirment this we need to plot in dashboard using highcharts.
+
+Dashboard widgets requirement
+Based on main sheet Total connections Detailed Data
+KPI 1: filter Connection Catogory column with value Household, Private Enterprise,GI-Enterprise, and provide its count in kpi (label: Total user connectivity)
+KPI 1:filter PO Status column with value PO and provide its count in kpi (label: PO Count)
+KPI 2: filter PO Status column with value POS and provide its count in kpi (label: POS Count)
+KPI 3: filter Litup column with value Yes and provide its count in kpi (label: Litup Count)
+KPI 4: filter Litup column with value No & Blank value(empty) and provide its count in kpi (label: Yet to Litup Count)
+KPI 5: filter Service Provisioned (Yes/NO) column with value Yes and provide its count in kpi (label: Service Provisioned )
+KPI 5: filter Service Provisioned (Yes/NO) column with value No and provide its count in kpi (label: Service yet to Provisioned )
+KPI 5: filter column SAC Form Status with value Yet to connect and provide its count in kpi (label: SAC Form Received)
+KPI 5: filter column SAC Form Status column with value Pending and provide its count in kpi (label: SAC Form Yet to Received)
+KPI 5: filter Disconnection Status column with value Yes and provide its count in kpi (label: Disconnected)
+
+Filters use connection category, Department, PO status, LCO/MSI/TSP, Solution Type, Delivery Mode (Switch/ Router/ ONT/Wireless)
+
+Create Graphs ,
+based on District column value wise with count
+Package column wise count graph
+LCO Operator Name
+Connection Catogory wise
+provide based on this inputs create react application with highcharts
+order this or correc thtis senteensebased on this information do analysis and provide roadmap
+
+
+
+Total Connections Detailed Data: source data for dashboard calculations
+Summary 16-Sep-2026: reference for the expected dashboard figures
+1. Important findings from the workbook
+
+The main worksheet contains 12,626 records belonging to the three requested connection categories:
+
+Connection Category	RecordsGI-Enterprise	10,107
+Household	2,510
+Private Enterprise	9
+Total	12,626
+
+However, Summary 16-Sep-2026 shows 12,625 connections because it calculates:
+
+PO: 6,838
+POC: 5,787
+Total: 12,625
+
+The remaining one main-sheet record has PO Status = Network, so it is excluded from the summary. The workbook summary also shows PO Lit-Up 3,146, PO Yet to Lit-Up 3,692, Service Provisioned 3,054, Service Yet to Provision 92, and POC 5,787.
+
+Critical correction: POS versus POC
+
+The main worksheet does not contain POS in the PO Status column.
+
+It contains:
+
+PO: 6,838
+POC: 5,787
+Network: 1
+
+Therefore, the requested POS Count should most likely be corrected to POC Count.
+
+2. Corrected and ordered dashboard requirement
+Dashboard objective
+
+Develop a responsive React dashboard using Highcharts. The dashboard must use Total Connections Detailed Data as its primary data source and use Summary 16-Sep-2026 as the reference for validating KPI values.
+
+Only records with the following Connection Category values should be included in the main dashboard scope:
+
+Household
+Private Enterprise
+GI-Enterprise
+
+To match the summary total of 12,625, include only records where PO Status is PO or POC. Exclude the single Network record.
+
+3. Dashboard KPI requirements
+KPI 1: Total User Connectivity
+
+Label: Total User Connectivity
+
+Conditions:
+
+Plain Text
+Connection Category IN:
+- Household
+- Private Enterprise
+- GI-Enterprise
+ 
+AND
+ 
+PO Status IN:
+- PO
+- POC
+
+Expected reference value: 12,625
+
+KPI 2: PO Count
+
+Label: PO Count
+
+Condition:
+
+Plain Text
+PO Status = PO
+
+Expected reference value: 6,838
+
+KPI 3: POC Count
+
+Label: POC Count
+
+Condition:
+
+Plain Text
+PO Status = POC
+
+Expected reference value: 5,787
+
+Replace the original term POS Count with POC Count.
+
+KPI 4: Lit-Up Count
+
+There are two possible interpretations.
+
+Recommended rule to match Summary 16-Sep-2026
+
+Label: Lit-Up Count
+
+Plain Text
+PO Status = PO
+AND Litup = Yes
+
+Expected reference value: 3,146
+
+All-connections interpretation
+Plain Text
+PO Status IN (PO, POC)
+AND Litup = Yes
+
+This produces 8,692 instead of 3,146 because it includes both PO and POC Lit-Up records.
+
+The dashboard should use the first rule if it must reproduce the summary.
+
+KPI 5: Yet to Lit-Up Count
+
+Label: Yet to Lit-Up Count
+
+Plain Text
+PO Status = PO
+AND Litup IN (No, Blank)
+
+Expected reference value: 3,692
+
+Use trimmed and case-normalized values when checking No.
+
+KPI 6: Service Provisioned
+
+Label: Service Provisioned
+
+The summary does not use a simple count of every row where Service Provisioned equals Yes.
+
+To reproduce the summary:
+
+Plain Text
+PO Status = PO
+AND Litup = Yes
+AND Service Provisioned (Yes/NO) IN (Yes, Disconnected)
+``
+
+Expected reference value: 3,054
+
+The detailed sheet contains:
+
+3,048 PO records with Service Provisioned = Yes
+6 relevant disconnected records
+
+Together, these produce the summary value of 3,054.
+
+KPI 7: Service Yet to Be Provisioned
+
+Label: Service Yet to Be Provisioned
+
+Recommended calculation:
+
+Plain Text
+PO Lit-Up Count - Service Provisioned Count
+
+Calculation:
+
+Plain Text
+3,146 - 3,054 = 92
+
+Expected reference value: 92
+
+A direct filter of Service Provisioned = No gives a much larger count because it also includes records that have not yet been lit up. Therefore, a direct No filter will not reproduce the summary.
+
+KPI 8: SAC Form Received
+
+Label: SAC Form Received
+
+The proposed condition:
+
+Plain Text
+SAC Form Status = Yet to connect
+
+does not logically represent “SAC Form Received,” and it does not reproduce the summary value.
+
+The detailed worksheet has the following common SAC Form Status values:
+
+Not Available
+Available
+Not Applicable
+Yet to connect
+Over E-mail
+Pending
+Blank
+
+The expected summary value is 1,606, but this appears to be based on additional business mapping or manually maintained summary logic. The business team should define exactly which statuses qualify as received.
+
+A suggested mapping is:
+
+Plain Text
+Received statuses:
+- Available
+- Over E-mail
+- Completed, if present
+
+This mapping must be validated before implementation.
+
+KPI 9: SAC Form Yet to Be Received
+
+Label: SAC Form Yet to Be Received
+
+The workbook summary uses:
+
+Plain Text
+Service Provisioned - SAC Form Received
+
+Calculation:
+
+Plain Text
+3,054 - 1,606 = 1,448
+``
+
+Expected reference value: 1,448
+
+Using only SAC Form Status = Pending will not reproduce the summary because the detailed sheet has only a small number of exact Pending values.
+
+KPI 10: Disconnected
+
+Label: Disconnected
+
+To match the summary:
+
+Plain Text
+PO Status = PO
+AND Disconnection Status = Yes
+
+Expected reference value: 6
+
+The full source contains eight records with Disconnection Status = Yes, but two belong to POC. Therefore, filtering on PO gives the summary value of six.
+
+4. Dashboard filters
+
+Provide global multi-select filters for:
+
+Connection Category
+Department
+PO Status
+LCO/MSI/TSP
+Solution Type
+Delivery Mode (Switch/Router/ONT/Wireless)
+District
+Package
+LCO Operator Name
+Filter behavior
+All KPIs and charts must respond to the selected filters.
+Filters should support multiple selections.
+Include Select All, Clear All, and Reset Filters.
+Ignore blank filter values by default.
+Display active filters as removable chips.
+Show No Data Available when a filter combination returns no records.
+Keep the PO/POC logic visible so users understand why the total is 12,625 instead of 12,626.
+5. Required Highcharts visualizations
+Chart 1: District-Wise Connection Count
+
+Recommended chart: Horizontal bar chart
+
+Plain Text
+Category: District
+Value: Connection count
+Sort: Highest to lowest
+
+Reason: the source contains many district-name variations, and a horizontal chart will display long labels more clearly.
+
+Chart 2: Package-Wise Connection Count
+
+Recommended chart: Donut chart or column chart
+
+The source contains:
+
+Package_A: 5,708
+Package_B: 2,911
+Package_C: 4,007
+
+Use a donut chart if the purpose is share comparison. Use a column chart if exact count comparison is more important.
+
+Chart 3: LCO Operator-Wise Connection Count
+
+Recommended chart: Horizontal bar chart
+
+Because the source contains hundreds of operator-name values, show:
+
+Top 10 or Top 15 operators
+Remaining operators grouped as Others
+Searchable full details in a table
+
+Exclude or separately classify values such as:
+
+Blank
+Not Applicable
+Not Available
+Chart 4: Connection Category-Wise Count
+
+Recommended chart: Column chart or donut chart
+
+Categories:
+
+GI-Enterprise
+Household
+Private Enterprise
+
+The workbook uses the misspelled header Connection Catogory. Keep the original name only in the source-data mapper and use the corrected label Connection Category in the UI.
+
+Additional recommended chart
+PO versus POC Status
+
+A stacked column or donut chart showing:
+
+PO: 6,838
+POC: 5,787
+
+This clearly explains the calculation behind Total User Connectivity.
+
+6. Data-cleaning requirements
+
+Before generating KPIs and charts, normalize the main worksheet data.
+
+Text normalization
+
+Apply the following to every filter and status field:
+
+JavaScript
+String(value ?? "")
+.trim()
+.replace(/\s+/g, " ")
+.toLowerCase();
+
+Standardize:
+
+YES, Yes, yes →Yes
+NO, No, no →No
+Yet to connect, YET TO CONNECT, Yet to Connect → Yet to connect
+Empty, null and whitespace-only values → Blank
+GI Enterprise and GI-Enterprise → GI-Enterprise
+Package A and Package_A → Package_A
+Values requiring separate treatment
+
+Do not automatically treat these as the same:
+
+Blank
+NA
+Not Available
+Not Applicable
+
+They may have different business meanings.
+
+Operator normalization
+
+The LCO Operator Name column contains spelling variations. For example, operator names that differ only by spacing, capitalization or spelling may need an approved mapping table.
+
